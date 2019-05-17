@@ -19,7 +19,6 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'client/dist')));
 
 
-
 //express router 
 const router = express.Router();
 
@@ -82,15 +81,9 @@ router.route('/todo/delete/:id').get((req, res) => {
 
 app.use('/', router);
 
-// Create link to Angular build directory
-// var distDir = __dirname + "/dist/";
-// app.use(express.static(distDir));
-
 app.get('*', function(req,res){
-    // res.sendFile(path.join(__dirname, 'client/dist/to-do-list/index.html'))
     res.redirect('/');
 })
-
 
 //mLab heroku provision deployment server, or localhost for development
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/todo");
