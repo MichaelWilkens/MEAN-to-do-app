@@ -486,22 +486,21 @@ __webpack_require__.r(__webpack_exports__);
 var TodoService = /** @class */ (function () {
     function TodoService(http) {
         this.http = http;
-        this.uri = 'http://localhost:4000';
     }
     ;
     TodoService.prototype.getTodos = function () {
-        return this.http.get(this.uri + "/todos");
+        return this.http.get("/todos");
     };
     ;
     TodoService.prototype.getTodoById = function (id) {
-        return this.http.get(this.uri + "/todo/" + id);
+        return this.http.get("/todo/" + id);
     };
     ;
     TodoService.prototype.addTodo = function (title) {
         var todo = {
             title: title
         };
-        return this.http.post(this.uri + "/todo/add", todo);
+        return this.http.post("/todo/add", todo);
     };
     ;
     TodoService.prototype.updateTodo = function (id, title, isDone) {
@@ -509,11 +508,11 @@ var TodoService = /** @class */ (function () {
             title: title,
             isDone: isDone
         };
-        return this.http.post(this.uri + "/todo/update/" + id, todo);
+        return this.http.post("/todo/update/" + id, todo);
     };
     ;
     TodoService.prototype.deleteTodo = function (id) {
-        return this.http.get(this.uri + "/todo/delete/" + id);
+        return this.http.get("/todo/delete/" + id);
     };
     ;
     TodoService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -591,7 +590,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/michaelwilkens/Documents/Coding/MAPIR/To-Do-List/to-do-list/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/michaelwilkens/Documents/Coding/MAPIR/To-Do-List-Deploy/mean-task-application/client/src/main.ts */"./src/main.ts");
 
 
 /***/ })

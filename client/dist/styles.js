@@ -598,8 +598,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/michaelwilkens/Documents/Coding/MAPIR/To-Do-List/to-do-list/node_modules/@angular/material/prebuilt-themes/indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
-module.exports = __webpack_require__(/*! /Users/michaelwilkens/Documents/Coding/MAPIR/To-Do-List/to-do-list/src/styles.css */"./src/styles.css");
+__webpack_require__(/*! /Users/michaelwilkens/Documents/Coding/MAPIR/To-Do-List-Deploy/mean-task-application/client/node_modules/@angular/material/prebuilt-themes/indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
+module.exports = __webpack_require__(/*! /Users/michaelwilkens/Documents/Coding/MAPIR/To-Do-List-Deploy/mean-task-application/client/src/styles.css */"./src/styles.css");
 
 
 /***/ })
